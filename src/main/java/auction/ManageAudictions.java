@@ -13,9 +13,12 @@ import java.util.*;
 @Setter
 public class ManageAudictions extends Utils {
     private final Map<Integer, Auction> auctions = new TreeMap<Integer,Auction>();
+//inclui pq LOMBOK NÃO O FEZ
+    public Map<Integer, Auction> getAuctions() {
+		return auctions;
+	}
 
-
-    public void registerNewAuction(
+	public void registerNewAuction(
             Integer id, LocalDate date,
             String local, String cidade,
             String estado, Financeira financeira

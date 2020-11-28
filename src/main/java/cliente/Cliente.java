@@ -17,7 +17,9 @@ public class Cliente {
     private String senha;
     private List<LancesDTO> lances = new ArrayList<LancesDTO>();
 
-
+// LOMBOK FUCKED ME UP!
+    
+    
 
     public Cliente(String nome, String email, String senha) {
         this.nome = nome;
@@ -25,5 +27,39 @@ public class Cliente {
         this.senha = senha;
     }
 
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public List<LancesDTO> getLances() {
+		return lances;
+	}
+
+	public void setLances(List<LancesDTO> lances) {
+		this.lances = lances;
+	}
+	public void inserirLance(LancesDTO lancedoCliente) { 
+	this.lances.add(lancedoCliente);
+	}
 
 }

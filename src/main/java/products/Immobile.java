@@ -29,9 +29,34 @@ public class Immobile extends Product {
         this.cep = cep;
     }
 
+    // LOMBOK NÃO FEZ
+    
 
+    public String getTypeImmobile() {
+		return typeImmobile;
+	}
 
-    @Override
+	public void setTypeImmobile(String typeImmobile) {
+		this.typeImmobile = typeImmobile;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public Integer getCep() {
+		return cep;
+	}
+
+	public void setCep(Integer cep) {
+		this.cep = cep;
+	}
+
+	@Override
     public String toString() {
         return "Imovel{" +
                 "Id ='" + getId() + '\'' +

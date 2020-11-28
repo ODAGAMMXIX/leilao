@@ -31,11 +31,11 @@
             <artifactId>nullablej</artifactId>
             <version>4.0.1.0</version>
         </dependency>
-        <dependency>
+     <!--    <dependency>
             <groupId>org.example</groupId>
             <artifactId>Leilao</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
+        </dependency> -->
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>

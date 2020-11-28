@@ -1,0 +1,16 @@
+auction\Auction$2.class
+financeira\Financeira.class
+products\Immobile.class
+cliente\Cliente.class
+dtos\LancesDTO.class
+utils\Utils.class
+auction\ManageAudictions.class
+auction\ManageAudictions$1.class
+products\Product.class
+auction\Auction.class
+Main.class
+enums\TypeImmobile.class
+products\Vehicle.class
+cliente\ClienteManager.class
+auction\Auction$1.class
+enums\TypeVehicle.class

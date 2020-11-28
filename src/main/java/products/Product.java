@@ -25,12 +25,53 @@ public class Product {
         this.auction = auction;
         this.nome = nome;
     }
-
+// LOMBOK NÃO FEZ.
+    
     public int compareTo(Product otherProduct) {
         return this.getNome().compareTo( otherProduct.getNome());
     }
 
-    public void sortByKey(){
+    public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Double getValue() {
+		return value;
+	}
+
+	public void setValue(Double value) {
+		this.value = value;
+	}
+
+	public Integer getAuction() {
+		return auction;
+	}
+
+	public void setAuction(Integer auction) {
+		this.auction = auction;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Map<Integer, LancesDTO> getLances() {
+		return lances;
+	}
+
+	public void setLances(Map<Integer, LancesDTO> lances) {
+		this.lances = lances;
+	}
+
+	public void sortByKey(){
         List sortedKeys = new ArrayList(lances.keySet());
         Collections.sort(sortedKeys);
 

@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 
 @Getter
 @Setter
+
 public class Auction extends Utils implements Comparable<Auction> {
     private Integer idAuction;
     private LocalDate date;
@@ -23,12 +24,69 @@ public class Auction extends Utils implements Comparable<Auction> {
     private Financeira financeira;
     private final Map<Integer,Vehicle> vehicles = new TreeMap<Integer,Vehicle>();
     private final Map<Integer, Immobile> immobilises = new TreeMap<Integer,Immobile>();
-
+// LOMBOK NÃO FE:
+    
     public int compareTo(Auction otherAuction) {
         return this.getDate().compareTo( otherAuction.getDate());
     }
 
-    public Auction(Integer id, LocalDate date, String local,String cidade, String estado, Financeira financeira){
+    public Integer getIdAuction() {
+		return idAuction;
+	}
+
+	public void setIdAuction(Integer idAuction) {
+		this.idAuction = idAuction;
+	}
+
+	public LocalDate getDate() {
+		return date;
+	}
+
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+
+	public String getLocal() {
+		return local;
+	}
+
+	public void setLocal(String local) {
+		this.local = local;
+	}
+
+	public String getCidade() {
+		return cidade;
+	}
+
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public Financeira getFinanceira() {
+		return financeira;
+	}
+
+	public void setFinanceira(Financeira financeira) {
+		this.financeira = financeira;
+	}
+
+	public Map<Integer, Vehicle> getVehicles() {
+		return vehicles;
+	}
+
+	public Map<Integer, Immobile> getImmobilises() {
+		return immobilises;
+	}
+
+	public Auction(Integer id, LocalDate date, String local,String cidade, String estado, Financeira financeira){
         this.idAuction = id;
         this.date = date;
         this.local = local;
